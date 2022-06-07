@@ -1,0 +1,98 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap'); */
+
+ 
+.header {
+  padding-top:2rem;
+  margin: 0 auto;
+  margin-bottom: 1rem;
+  display: grid;
+  grid-template-columns: repeat(1fr, 1fr);
+  grid-gap: 1em;
+  max-width: 1296px;
+  height: 100%;
+}
+.header img{
+  width:250px;
+  justify-self: center;
+}
+
+.cart{
+  justify-self: center;
+  text-align: center;
+  width: 100px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding:20px;
+}
+
+* {
+  margin: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+body {
+  /* font-family: 'Roboto'; */
+  font-size:16px;
+}
+
+h1 {
+  font-size: 40px;
+}
+
+h2 {
+  font-size: 32px;
+}
+
+h3 {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+p {
+  font-size: 16px;
+  line-height: 24px;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+/* Change this if you want the list to shrink */
+.App{
+  max-width: 1440px;
+  margin: 0 auto;
+}
+.container {
+  margin: 0 auto;
+  width: 95%;
+}
+
+/* Product card mobile view */
+@media (max-width: 768px) {
+.header {
+  display:flex;
+  flex-direction: row;
+  justify-content:space-around;
+  flex-wrap: wrap;
+  margin-bottom: 1rem;  
+}
+.cart{
+  align-self:end;
+  width: fit-content;
+
+}
+  .container {
+   display:block;
+  }
+}
+
+/* Product card tablet view */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .container {
+    display:block;
+    margin: 0;
+    padding: 0;
+  }
+}
